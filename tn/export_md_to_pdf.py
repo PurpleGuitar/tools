@@ -460,6 +460,7 @@ class TnConverter(object):
             md += uses
             md += '\n\n'
             tw_md += md
+        tw_md = remove_md_section(tw_md, "Picture of.*")
         tw_md = remove_md_section(tw_md, "Bible References")
         tw_md = remove_md_section(tw_md, "Examples from the Bible stories")
         return tw_md
